@@ -1,7 +1,7 @@
 
 function StatCard({ title, value, growth }) {
   return (
-    <div className="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition duration-300">
+    <div className="bg-white p-6 rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300">
       <h2 className="text-gray-500 text-lg">
         {title}
       </h2>
