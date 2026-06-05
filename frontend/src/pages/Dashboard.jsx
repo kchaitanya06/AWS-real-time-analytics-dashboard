@@ -45,42 +45,40 @@ function Dashboard() {
   if (loading) {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100">
-
       <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-
       <h1 className="text-2xl font-bold mt-6">
         Loading Dashboard...
       </h1>
-
     </div>
   );
-  if (error) {
+}
+
+if (error) {
   return (
     <div className="flex justify-center items-center min-h-screen text-red-500 text-2xl font-bold">
       {error}
     </div>
   );
-}
+
 }
 
 
   return (
 
-    <div className="flex-1 p-6 bg-gradient-to-br from-slate-100 via-gray-100 to-slate-200 min-h-screen">
-
+    <div className="flex-1 p-6 bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100 min-h-screen">
       <Navbar />
 
       <div className="mt-6">
 
-        <h1 className="text-3xl font-bold">
-          Cloud Analytics Dashboard
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          AWS Real-Time Analytics Dashboard
         </h1>
 
         <div className="flex items-center gap-3 mt-2">
 
-  <p className="text-gray-600">
-    Welcome to AWS Analytics Dashboard
-  </p>
+        <p className="text-gray-600">
+          Real-time business intelligence powered by modern cloud architecture.
+        </p>
 
   <div className="flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
 
@@ -121,19 +119,24 @@ function Dashboard() {
         />
 
         <StatCard
-          title="API Status"
-          value="Online"
-          growth="Stable"
+          title="Cloud Health"
+          value="99.9%"
+          growth="Healthy"
         />
 
 
       </div>
-
       <RevenueChart />
 
-      <TransactionsTable />
+<TransactionsTable />
 
-    </div>
+<footer className="mt-10 text-center text-gray-500 text-sm">
+  Built with React, Node.js, Express & AWS Architecture Concepts
+</footer>
+
+</div>
+
+     
   );
 }
 

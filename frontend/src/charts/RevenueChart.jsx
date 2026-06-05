@@ -1,7 +1,5 @@
 
 import {
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -21,16 +19,28 @@ const data = [
 ];
 
 function RevenueChart() {
-
   return (
+    <div className="bg-white p-8 rounded-2xl shadow-xl mt-8 border border-gray-100 hover:shadow-2xl transition duration-300">
 
-    <div className="bg-white p-6 rounded-xl shadow mt-8">
+      <div className="flex justify-between items-center mb-6">
 
-      <h2 className="text-3xl font-bold mb-6">
-        Revenue Overview
-      </h2>
+        <div>
+          <h2 className="text-3xl font-bold">
+            Revenue Overview
+          </h2>
 
-      <ResponsiveContainer width="100%" height={400}>
+          <p className="text-gray-500 mt-1">
+            Monthly revenue performance analytics
+          </p>
+        </div>
+
+        <div className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+          Last 6 Months
+        </div>
+
+      </div>
+
+      <ResponsiveContainer width="100%" height={420}>
 
         <AreaChart data={data}>
 
@@ -66,6 +76,7 @@ function RevenueChart() {
             type="monotone"
             dataKey="revenue"
             stroke="#2563eb"
+            strokeWidth={4}
             fillOpacity={1}
             fill="url(#colorRevenue)"
           />
