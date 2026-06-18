@@ -67,7 +67,7 @@ npm run dev
 Create `.env` inside frontend:
 
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=https://aws-real-time-analytics-dashboard-backend-2sxk.onrender.com
 ```
 
 ## Output
@@ -76,6 +76,20 @@ VITE_API_URL=http://localhost:5000
 - Revenue Chart
 - Transactions Table
 
+## Live Deployment
+
+### Frontend
+https://aws-real-time-analytics-dashboard.onrender.com
+
+### Backend
+https://aws-real-time-analytics-dashboard-backend-2sxk.onrender.com
+
+## Screenshots
+
+Screenshots are available in:
+
+docs/screenshots/
+
 ## Future Enhancements
 
 - Real AWS Integration
@@ -83,3 +97,16 @@ VITE_API_URL=http://localhost:5000
 - Report Export
 - Notifications
 - Advanced Analytics
+
+
+## Project Status
+
+Completed and deployed successfully on Render.
+
+Features Implemented:
+- Real-time Dashboard
+- Revenue Visualization
+- Analytics Cards
+- Transaction Monitoring
+- Frontend Deployment
+- Backend Deployment
